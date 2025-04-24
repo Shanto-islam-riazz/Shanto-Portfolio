@@ -64,3 +64,10 @@ ScrollReveal().reveal(".portfolio__card", {
   duration: 1000,
   interval: 500,
 });
+
+document.getElementById("downloadBtn").addEventListener("click", function () {
+  const link = document.createElement("a");
+  link.href = "./assets/shanto-resume.jpg"; // image file path
+  link.download = "shanto-resume.jpg"; 
+  link.click();
+});
