@@ -65,9 +65,11 @@ ScrollReveal().reveal(".portfolio__card", {
   interval: 500,
 });
 
-document.getElementById("downloadBtn").addEventListener("click", function () {
-  const link = document.createElement("a");
-  link.href = "./assets/shanto-resume.jpg";
-  link.download = "shanto-resume.jpg"; 
+document.getElementById('downloadBtn').addEventListener('click', function() {
+  const link = document.createElement('a');
+  link.href = './assets/shanto-resume.pdf'; // ekhane tomake pdf er link dite hobe
+  link.download = 'shanto-resume.pdf';       // file download howar somoy je nam dekhabe
+  document.body.appendChild(link);
   link.click();
+  document.body.removeChild(link);
 });
