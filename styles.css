@@ -239,12 +239,14 @@ nav {
 
 .service__grid {
   margin-top: 2rem;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
 }
 
 .service__card {
-  padding: 2rem 1rem;
+  padding: 6rem 4rem;
   text-align: center;
   background-image: var(--gradient-2);
   border-radius: 1rem;
